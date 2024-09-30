@@ -1,10 +1,10 @@
 package org.example;
 
-public class Camel implements Land, Herbivorous{
+public class Camel extends Herbivorous implements Land{
   public void walk(){
-    System.out.println("Верблюд ходит");
+    System.out.println("Camel walks");
   }
   public void eat(){
-    System.out.println("Верблюд ест траву");
+    System.out.println("Camel eats " + food);
   }
 }

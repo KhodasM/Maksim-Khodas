@@ -1,10 +1,10 @@
 package org.example;
 
-public class Dolphin implements Waterfowl, Predator {
+public class Dolphin extends Predator implements Waterfowl {
   public void swim() {
-    System.out.println("Дельфин плавает");
+    System.out.println("Dolphin swims");
   }
   public void eat() {
-    System.out.println("Дельфин ест рыбу");
+    System.out.println("Dolphin eats " + fishfood);
   }
 }

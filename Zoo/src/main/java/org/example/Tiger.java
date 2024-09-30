@@ -1,10 +1,10 @@
 package org.example;
 
-public class Tiger implements Land, Predator{
+public class Tiger extends Predator implements Land{
   public void walk(){
-    System.out.println("Тигр ходит");
+    System.out.println("Tiger walks");
   }
   public void eat(){
-    System.out.println("Тигр ест мясо");
+    System.out.println("Tiger eats " + meatfood);
   }
 }
